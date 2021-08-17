@@ -29,7 +29,7 @@ body{
     justify-content: space-between;
     align-items: center;
     margin-top: 60px;
-    margin-bottom: 86px;
+    margin-bottom: 66px;
 }
 
 .menu{
@@ -53,6 +53,11 @@ body{
     font-size: 16px;
     color: var(--white);
     text-decoration: none;
+}
+
+.nav__link:hover{
+    color: var(--blue);
+    transition: .2s;
 }
 
 .nav__link-login{
@@ -104,12 +109,16 @@ body{
     border-radius: 32px;
 }
 
+.btn-illustraitain:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 3px 1px white;
+}
+
 /* illustraitain */
 
 .illustraitain{
     display: flex;
     justify-content: space-between;
-    position: relative;
 }
 
 .title{
@@ -125,6 +134,7 @@ body{
     background: rgba(255, 255, 255, 0.1);
     border-radius: 32px;
     max-width: 365px;
+    margin-top: 50px;
 }
 
 .info__text{
@@ -136,7 +146,7 @@ body{
     margin-top: 4px;
 }
 
-.info__text p{
+.info__text span{
     margin: 0;
     font-size: 16px;
     color: var(--dark);
@@ -167,15 +177,55 @@ body{
 }
 
 .illustraitain__img{
-    position: absolute;
-    top: -70px;
-    left: 670px;
     margin-bottom: 100px;
 }
 
+/* Description */
 
+.description{
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+}
 
+.description__item{
+    width: 33%;
+    display: flex;
+}
 
+.description__item-text{
+    margin-left: 24px;
+}
+
+.description--title{
+    margin: 0;
+    font-size: 40px;
+    line-height: 1.5;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.description--text{
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.75;
+    font-weight: 400;
+    color: var(--white);
+}
+
+.description__image{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.description__image img{
+    position: absolute;
+    top: 24%;
+    left: 24%;
+}
 
 
 
