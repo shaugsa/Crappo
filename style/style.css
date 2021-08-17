@@ -14,9 +14,14 @@ body{
 }
 
 .container {
-    max-width: 1440px;
+    min-width: 1440px;
     margin: 0 auto;
     padding: 0 120px;
+}
+
+.crypt--block{
+    padding: 0;
+    width: 100%;
 }
 
 
@@ -228,4 +233,40 @@ body{
 }
 
 
+/* Content */
+
+.title__block{
+    padding-top: 100px;
+    padding-bottom: 219px;
+}
+
+.content__title{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: var(--white);
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.content__subtitle{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--white);
+    text-align: center;
+}
+
+
+.crypt__block{
+    margin-bottom: 316px;
+    background: linear-gradient(180deg, #F8F9FB 0%, #FAFBFF 100%);
+}
+
+.crypt__title{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: var(--dark);
+}
 
