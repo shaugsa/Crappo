@@ -5,6 +5,7 @@
     --white: #FFFFFF;
     --blue: #3671E9;
     --purple: #2B076E;
+    --gray:#BDBDBD;
 }
 
 body{
@@ -14,21 +15,24 @@ body{
 }
 
 .container {
-    min-width: 1440px;
+    width: 100%;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 0 120px;
 }
 
 .crypt--block{
+    margin: 0 auto;
     padding: 0;
-    width: 100%;
+    max-width: 100%;
 }
 
 
 /* header */
 
 .header{
-    max-height: 1020px;
+    width: 100%;
+    max-height: 1202px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -119,9 +123,27 @@ body{
     box-shadow: 2px 2px 3px 1px white;
 }
 
+.btn--text{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--white);
+    display: none;
+}
+
+.trade--btn{
+    width: 64px;
+    height: 64px;
+    border: 2px solid rgba(43, 7, 110, 0.2);
+    border-radius: 50%;
+    padding: 0;
+    cursor: pointer;
+}
+
 /* illustraitain */
 
 .illustraitain{
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
@@ -132,6 +154,10 @@ body{
     line-height: 75,84px;
     font-weight: 700;
     margin-bottom: 24px;
+}
+
+.illustraitain__info{
+    width: 50%;
 }
 
 .info{
@@ -182,12 +208,14 @@ body{
 }
 
 .illustraitain__img{
+    width: 50%;
     margin-bottom: 100px;
 }
 
 /* Description */
 
 .description{
+    width: 100%;
     padding: 100px 0;
     display: flex;
     justify-content: space-between;
@@ -235,6 +263,9 @@ body{
 
 /* Content */
 
+.content{
+}
+
 .title__block{
     padding-top: 100px;
     padding-bottom: 219px;
@@ -259,6 +290,8 @@ body{
 
 
 .crypt__block{
+    position: relative;
+    padding: 316px 120px 100px;
     margin-bottom: 316px;
     background: linear-gradient(180deg, #F8F9FB 0%, #FAFBFF 100%);
 }
@@ -268,5 +301,71 @@ body{
     font-weight: 700;
     line-height: 1.5;
     color: var(--dark);
+}
+
+.crypt__title{
+    text-align: center;
+    font-size: 40px;
+    line-height: 1.5;
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 64px;
+}
+
+.trade__block{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.trade__item{
+    width: 33.33333%;
+    max-width: 370px;
+    max-height: 433px;
+    background-color: var(--white);
+    border-radius: 16px;
+    text-align: center;
+    padding: 48px 24px;
+}
+
+.trade__title{
+    display: flex;
+    align-items: center;
+    margin-left: 25%;
+}
+
+.trade__crypt{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: var(--dark);
+    margin-right: 8px;
+}
+
+.trade__subtitle{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #BDBDBD;
+}
+
+.trade__text{
+    font-size: 16px;
+    line-height: 1.75;
+    font-weight: 400;
+    color: #828282;
+}
+
+.calculate{
+    position: absolute;
+    width: 942px;
+    height: 371px;
+    background-color: var(--white);
+    top: -155px;
+    border-radius: 16px;
+}
+
+.wrapper{
+    background-color: var(--gray);
 }
 
