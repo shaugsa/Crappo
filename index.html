@@ -139,28 +139,34 @@
             <div class="crypt__block">
 
                <div class="calculate">
-
-                    <form action="/">
+                    <form action="#" method="POST">
                         
                        <div class="wrapper">
 
-                            <input type="text" >  
+                            <input id="text" type="text" autocomplete="on" placeholder="Enter your hash rate" value="">  
 
-                            <select name="" id="">
+                            <select name="" id="list">
                                 <option value="" label="TH/s"></option>
-                                <option value="" label="TH/s"></option>
-                                <option value="" label="TH/s"></option>
+                                <option value="" label="BYN"></option>
+                                <option value="" label="USD"></option>
+                                <option value="" label="RU"></option>
                             </select>
-        
-                       </div>
+                            
+                            <button class="btn btn--calculate">
+                                <a href="#" class="calculate__btn" >Calculate</a>
+                            </button>
+                      
+                        </div>
+
                     </form>
 
-                </div>
-
                     <div class="calculate__des">
-                        
-                        
 
+                        <h3 class="calculate__des--subtitle" >ESTIMATED 24 HOUR REVENUE:</h3>
+
+                        <h2 class="calculate__des--title">0.055 130 59 ETH <b class="calculate__des--title bold">($1275)</b></h2>
+
+                        <p class="calculate__des--text">Revenue will change based on mining difficulty and Ethereum price.</p>
 
                     </div>
                </div>
@@ -236,7 +242,34 @@
 
             </div> <!--/.crypt__block-->
 
+        </div><!--/.content-->
 
+    </div><!--/.container-->
+
+    <div class="container container-gradient">
+
+        <div class="mainig__block">
+
+            <div class="mainig__block-form">
+
+                <div aria-valuemax="mainig__block-form--text">
+                    <h2 class="mainig__block-form--title">Start mining now</h2>
+
+                    <h3 class="mainig__block-form--subtitle">Join now with CRAPPO to get the latest news and start mining now</h3>
+
+                </div>
+
+                <form action="#" method="POST">
+
+                <input type="text" >
+
+                <button class="btn btn--mainig__block">
+
+                </button>
+
+                </form>
+
+            </div>
 
         </div>
 
